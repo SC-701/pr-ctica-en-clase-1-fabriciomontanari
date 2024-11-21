@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Abstracciones\Abstracciones.csproj" />
+    <ProjectReference Include="..\DA.Dapper\DA.Dapper.csproj" />
   </ItemGroup>
 
 </Project>

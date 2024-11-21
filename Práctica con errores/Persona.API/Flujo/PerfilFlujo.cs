@@ -3,6 +3,7 @@ using Abstracciones.Interfaces.Flujo;
 using Abstracciones.Interfaces.Reglas;
 using Abstracciones.Interfaces.Servicios;
 using Abstracciones.Modelos;
+using DA.Dapper;
 using Flujo.Helper;
 
 namespace Flujo
@@ -13,8 +14,9 @@ namespace Flujo
         private IDocumentoDA _documentoDA;
         private IDocumentoServicio _documentoServicio;
 
-        public PerfilFlujo(IDocumentoServicio documentoServicio, IDocumentoDA documentoDA)
+        public PerfilFlujo(IPerfilDA perfilDA,IDocumentoServicio documentoServicio, IDocumentoDA documentoDA)
         {
+            _perfilDA = perfilDA;
             _documentoServicio = documentoServicio;
             _documentoDA = documentoDA;
         }
