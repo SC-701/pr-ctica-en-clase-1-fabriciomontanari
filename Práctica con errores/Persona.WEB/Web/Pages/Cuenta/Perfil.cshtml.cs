@@ -52,5 +52,7 @@ namespace Web.Pages.Cuenta
             DocumentoContenido documento = new DocumentoContenido() { Nombre = archivo.FileName, Contenido = contenido };
             return documento;
         }
+
+
     }
 }
